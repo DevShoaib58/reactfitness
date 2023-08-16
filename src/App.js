@@ -3,7 +3,7 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import ExerciseDetails from './pages/ExerciseDetails';
 import Home from './pages/Home';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
