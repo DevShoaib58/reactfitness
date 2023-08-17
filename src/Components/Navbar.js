@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 
-const pages = [{ name: "Home", link: "/" }, { name: "Exercise Deatils", link: "/exercise/:id" }, { name: "Home", link: "/" }];
+const pages = [{ name: "Home", link: "/" }, { name: "Exercise Deatils", link: "/exercise/:id" },];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -89,7 +89,7 @@ function Navbar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                                     <Link to={page.link}>{page.name}</Link>
                                     <Typography textAlign="center"></Typography>
                                 </MenuItem>
@@ -118,7 +118,7 @@ function Navbar() {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
-                                key={page}
+                                key={page.name}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
