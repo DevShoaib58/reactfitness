@@ -6,14 +6,14 @@ const HomeBanner = () => {
         <Box sx={{ background: "#3498db" }}>
             <Container>
                 <Grid container spacing={2} >
-                    <Grid xs={12} md={8}>
+                    <Grid item xs={12} md={8}>
                         <Box>
                             <Typography variant='h1'>Hello Gym Nerds</Typography>
                             <Typography variant='h2'>Gear Up</Typography>
                             <Button variant="contained">Contained</Button>
                         </Box>
                     </Grid>
-                    <Grid xs={12} md={4}>
+                    <Grid item xs={12} md={4}>
                         <Box
                             component="img"
                             sx={{
